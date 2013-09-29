@@ -55,6 +55,8 @@ compile:
 test_en:
 	LC_ALL=en_US ./gettext_demo
 # 中文环境: ./gettext_demo
+test_cn:
+	LC_ALL=zh_CN.UTF-8 ./gettext_demo
 
 # 2. 平时增量开发步骤
 # 2.0 对c文件进行了修改,编译等日常开发工作
