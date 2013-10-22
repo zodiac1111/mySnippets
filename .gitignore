@@ -49,3 +49,6 @@ a.out
 ehthumbs.db
 Icon?
 Thumbs.db'
+# eclipse 项目文件
+.cproject
+.project
