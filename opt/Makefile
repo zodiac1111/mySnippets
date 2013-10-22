@@ -3,7 +3,7 @@ PREFIX=$PWD
 SRC=opt.c
 EXE=a.out
 
-.PHONY: all install clean distclean
+.PHONY: all install clean distclean dist
 
 all:
 	$(CC) $(SRC) -o $(EXE)

@@ -7,12 +7,15 @@ $(EXES):
 ###################################### 
 
 ## 简单通用例子, ##
-.PHONY: all install clean distclean
+.PHONY: all install clean distclean dist
 
+#
 all:
 	$(CC) 1.c -o a.out
 install:
 	cp a.out $(PREFIX)/bin/
+dist:
+	tar 
 clean:
 	rm *.o
 distclean:clean
