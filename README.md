@@ -5,3 +5,4 @@
 * opt 命令行选项/getopt例子
 * Makefile 基础Makefile例子
 * patch-test 使用diff和patch生成补丁和打补丁的例子
+* linux_c_uart_app应用层最简单使用uart例子
