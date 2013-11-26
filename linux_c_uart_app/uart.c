@@ -121,7 +121,7 @@ void set_speed(int fd, int speed)
   *@param  fd     类型  int  打开的串口文件句柄
   *@param  databits 类型  int 数据位   取值 为 7 或者8
   *@param  stopbits 类型  int 停止位   取值为 1 或者2
-  *@param  parity  类型  int  效验类型 取值为N,E,O,,S
+  *@param  parity  类型  int  效验类型 取值为N,E,O,S
   */
 int set_Parity(int fd, int databits, int stopbits, int parity)
 {
