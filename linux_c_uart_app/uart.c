@@ -83,11 +83,11 @@ int main(int argc, const char *argv[])
 }
 
 /**
- * *@brief  设置串口通信速率
- * *@param  fd     类型 int  打开串口的文件句柄
- * *@param  speed  类型 int  串口速度
- * *@return  void
- * */
+ * @brief  设置串口通信速率
+ * @param  fd     类型 int  打开串口的文件句柄
+ * @param  speed  类型 int  串口速度
+ * @return  void
+ */
 
 int speed_arr[] = {
 	B38400, B19200, B9600, B4800, B2400, B1200, B300
