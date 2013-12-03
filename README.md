@@ -7,3 +7,6 @@
 * patch-test 使用diff和patch生成补丁和打补丁的例子
 * linux_c_uart_app应用层最简单使用uart例子
 * gcc_overload.c gcc gnu实现到c语言函数重载.
+* json 自己写的json生成库,功能简单
+* crc 从kernel中抠出来的一种crc校验算法
+* md5 从kernel中抠出来
