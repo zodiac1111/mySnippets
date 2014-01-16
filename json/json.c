@@ -177,6 +177,7 @@ oJson * jsonAdd_(oJson *this, const char*key, const char*value, int isValue)
 /* 清空但不释放对象 */
 oJson* clean(oJson* this)
 {
+	memset(this->data,0x0,this->len);
 	this->this = NULL;
 	this->len = 0;
 	return this;
@@ -220,7 +221,13 @@ void print_json(oJson j)
 	(__builtin_types_compatible_p (__typeof__ (x), double))?1:0
 oJson * newJson(void)
 {
-	oJson *j = (oJson *) malloc(sizeof(oJson));
+	oJson *j = NULL;
+	j = (oJson *) malloc(sizeof(oJson));
+	if(j==NULL){
+		fprintf(stderr, "new Json Object");
+		DP;
+		return j;
+	}
 	j->data = NULL;
 	j->len = 0;
 	j->init = init;
@@ -228,5 +235,16 @@ oJson * newJson(void)
 	j->free = deleteJson;
 	j->clean = clean;
 	return j;
+}
+char jsonValToStringBuff[32];
+char* toStr(const char*format,...)
+{
+	va_list ap;
+	va_start(ap,format);
+	if(vsprintf( jsonValToStringBuff,format, ap)<0){
+		return NULL;
+	}
+	va_end(ap);
+	return jsonValToStringBuff;
 }
 

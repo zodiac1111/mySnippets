@@ -16,7 +16,8 @@
 	jsonAdd_(objJson,key,val, (IS_STRING,##__VA_ARGS__))
 
 
-
+extern char jsonValToStringBuff[32];
+extern char* toStr(const char*format,...);
 /* json 对象 */
 typedef struct json {
 	struct json * this;
